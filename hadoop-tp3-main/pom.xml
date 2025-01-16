@@ -33,6 +33,7 @@
     <modules>
         <module>p-collaborative-filtering-job-1</module>
         <module>p-collaborative-filtering-job-2</module>
+        <module>p-collaborative-filtering-job-3</module>
         <!-- Ajoute ici tous tes autres jobs sous forme de module -->
     </modules>
 
