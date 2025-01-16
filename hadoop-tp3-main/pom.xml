@@ -6,7 +6,6 @@
     <groupId>org.epf.hadoop.tp3</groupId>
     <artifactId>hadoop-tp3</artifactId>
     <version>1.0</version>
-
     <name>hadoop-tp3</name>
     <packaging>pom</packaging> <!-- Enables the use of sub pom.xml files for project structuring -->
 
@@ -31,6 +30,12 @@
         </dependency>
     </dependencies>
 
+    <modules>
+        <module>p-collaborative-filtering-job-1</module>
+        <module>p-collaborative-filtering-job-2</module>
+        <!-- Ajoute ici tous tes autres jobs sous forme de module -->
+    </modules>
+
     <build>
         <plugins>
             <plugin>
@@ -39,6 +44,11 @@
                 <configuration>
                     <source>8</source>
                     <target>8</target>
+                    <basedir/>
+                    <buildDirectory/>
+                    <mainOutputDirectory/>
+                    <outputDirectory/>
+                    <projectArtifact/>
                 </configuration>
             </plugin>
         </plugins>
