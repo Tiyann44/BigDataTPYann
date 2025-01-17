@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hadoop-tp3-collaborativeFiltering-job2" />
         <module name="hadoop-tp3-collaborativeFiltering-job1" />
+        <module name="hadoop-tp3-collaborativeFiltering-job3" />
       </profile>
     </annotationProcessing>
   </component>
