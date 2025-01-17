@@ -14,20 +14,20 @@ public class ColFilJob2{
 
         job.setJarByClass(ColFilJob2.class);
 
-        // Mapper and Reducer
+
         job.setMapperClass(CommonRelationsMapper.class);
         job.setReducerClass(CommonRelationsReducer.class);
 
-        // Custom Partitioner
+
         job.setPartitionerClass(UserPairPartitioner.class);
 
-        // Outputs
+
         job.setMapOutputKeyClass(UserPair.class);
         job.setMapOutputValueClass(Text.class);
         job.setOutputKeyClass(UserPair.class);
         job.setOutputValueClass(Text.class);
 
-        // Number of reducers
+
         job.setNumReduceTasks(2);
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
