@@ -20,15 +20,12 @@ public class ColFilJob3 {
 
         job.setJarByClass(ColFilJob3.class);
 
-        // Set Mapper and Reducer
         job.setMapperClass(RecommendationMapper.class);
         job.setReducerClass(RecommendationReducer.class);
 
-        // Set output key and value classes
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
 
-        // Set input and output paths
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
